@@ -39,7 +39,15 @@
             this.ManualButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
+            this.RegisterShopButton = new System.Windows.Forms.PictureBox();
+            this.PriceCheckerButton = new System.Windows.Forms.PictureBox();
+            this.NearbyButton = new System.Windows.Forms.PictureBox();
+            this.SignInGoogleButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegisterShopButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PriceCheckerButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NearbyButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignInGoogleButton)).BeginInit();
             this.SuspendLayout();
             // 
             // GoogleMapTxtBox
@@ -168,12 +176,56 @@
             this.Logo.TabIndex = 15;
             this.Logo.TabStop = false;
             // 
+            // RegisterShopButton
+            // 
+            this.RegisterShopButton.Image = ((System.Drawing.Image)(resources.GetObject("RegisterShopButton.Image")));
+            this.RegisterShopButton.Location = new System.Drawing.Point(1087, 10);
+            this.RegisterShopButton.Name = "RegisterShopButton";
+            this.RegisterShopButton.Size = new System.Drawing.Size(71, 40);
+            this.RegisterShopButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RegisterShopButton.TabIndex = 16;
+            this.RegisterShopButton.TabStop = false;
+            // 
+            // PriceCheckerButton
+            // 
+            this.PriceCheckerButton.Image = ((System.Drawing.Image)(resources.GetObject("PriceCheckerButton.Image")));
+            this.PriceCheckerButton.Location = new System.Drawing.Point(1164, 10);
+            this.PriceCheckerButton.Name = "PriceCheckerButton";
+            this.PriceCheckerButton.Size = new System.Drawing.Size(71, 40);
+            this.PriceCheckerButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PriceCheckerButton.TabIndex = 17;
+            this.PriceCheckerButton.TabStop = false;
+            // 
+            // NearbyButton
+            // 
+            this.NearbyButton.Image = ((System.Drawing.Image)(resources.GetObject("NearbyButton.Image")));
+            this.NearbyButton.Location = new System.Drawing.Point(1241, 10);
+            this.NearbyButton.Name = "NearbyButton";
+            this.NearbyButton.Size = new System.Drawing.Size(71, 40);
+            this.NearbyButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NearbyButton.TabIndex = 18;
+            this.NearbyButton.TabStop = false;
+            // 
+            // SignInGoogleButton
+            // 
+            this.SignInGoogleButton.Image = ((System.Drawing.Image)(resources.GetObject("SignInGoogleButton.Image")));
+            this.SignInGoogleButton.Location = new System.Drawing.Point(1318, 10);
+            this.SignInGoogleButton.Name = "SignInGoogleButton";
+            this.SignInGoogleButton.Size = new System.Drawing.Size(71, 40);
+            this.SignInGoogleButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SignInGoogleButton.TabIndex = 19;
+            this.SignInGoogleButton.TabStop = false;
+            // 
             // GoogleMapLinkRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1389, 598);
+            this.Controls.Add(this.SignInGoogleButton);
+            this.Controls.Add(this.NearbyButton);
+            this.Controls.Add(this.PriceCheckerButton);
+            this.Controls.Add(this.RegisterShopButton);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ManualButton);
@@ -192,6 +244,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegisterShopButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PriceCheckerButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NearbyButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SignInGoogleButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +264,9 @@
         private System.Windows.Forms.Button ManualButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox Logo;
+        private System.Windows.Forms.PictureBox RegisterShopButton;
+        private System.Windows.Forms.PictureBox PriceCheckerButton;
+        private System.Windows.Forms.PictureBox NearbyButton;
+        private System.Windows.Forms.PictureBox SignInGoogleButton;
     }
 }
