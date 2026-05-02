@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoogleMapLinkRegistration));
             this.GoogleMapTxtBox = new System.Windows.Forms.TextBox();
             this.GenerateBtn = new System.Windows.Forms.Button();
             this.GoogleMapLabel = new System.Windows.Forms.Label();
@@ -35,17 +36,18 @@
             this.GoogleMapInstructionLabel = new System.Windows.Forms.Label();
             this.HowtoGetLinkLabel = new System.Windows.Forms.Label();
             this.GoogleMapsLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.HomeLabelLink = new System.Windows.Forms.LinkLabel();
             this.ManualButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // GoogleMapTxtBox
             // 
             this.GoogleMapTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.GoogleMapTxtBox.ForeColor = System.Drawing.Color.Black;
-            this.GoogleMapTxtBox.Location = new System.Drawing.Point(23, 100);
-            this.GoogleMapTxtBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GoogleMapTxtBox.Location = new System.Drawing.Point(424, 283);
+            this.GoogleMapTxtBox.Margin = new System.Windows.Forms.Padding(2);
             this.GoogleMapTxtBox.Multiline = true;
             this.GoogleMapTxtBox.Name = "GoogleMapTxtBox";
             this.GoogleMapTxtBox.Size = new System.Drawing.Size(427, 32);
@@ -54,12 +56,12 @@
             // 
             // GenerateBtn
             // 
-            this.GenerateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.GenerateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(216)))), ((int)(((byte)(230)))));
             this.GenerateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenerateBtn.Font = new System.Drawing.Font("Times New Roman", 15F);
-            this.GenerateBtn.ForeColor = System.Drawing.Color.White;
-            this.GenerateBtn.Location = new System.Drawing.Point(446, 100);
-            this.GenerateBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GenerateBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenerateBtn.Location = new System.Drawing.Point(847, 283);
+            this.GenerateBtn.Margin = new System.Windows.Forms.Padding(2);
             this.GenerateBtn.Name = "GenerateBtn";
             this.GenerateBtn.Size = new System.Drawing.Size(118, 32);
             this.GenerateBtn.TabIndex = 2;
@@ -72,7 +74,7 @@
             this.GoogleMapLabel.Enabled = false;
             this.GoogleMapLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.GoogleMapLabel.ForeColor = System.Drawing.Color.DarkGray;
-            this.GoogleMapLabel.Location = new System.Drawing.Point(29, 104);
+            this.GoogleMapLabel.Location = new System.Drawing.Point(430, 287);
             this.GoogleMapLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GoogleMapLabel.Name = "GoogleMapLabel";
             this.GoogleMapLabel.Size = new System.Drawing.Size(213, 24);
@@ -84,7 +86,8 @@
             this.GoogleLinkLabel.AutoSize = true;
             this.GoogleLinkLabel.Enabled = false;
             this.GoogleLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.GoogleLinkLabel.Location = new System.Drawing.Point(24, 84);
+            this.GoogleLinkLabel.ForeColor = System.Drawing.Color.Black;
+            this.GoogleLinkLabel.Location = new System.Drawing.Point(425, 267);
             this.GoogleLinkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GoogleLinkLabel.Name = "GoogleLinkLabel";
             this.GoogleLinkLabel.Size = new System.Drawing.Size(100, 13);
@@ -96,7 +99,7 @@
             this.GoogleMapInstructionLabel.Enabled = false;
             this.GoogleMapInstructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.GoogleMapInstructionLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.GoogleMapInstructionLabel.Location = new System.Drawing.Point(41, 158);
+            this.GoogleMapInstructionLabel.Location = new System.Drawing.Point(442, 341);
             this.GoogleMapInstructionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GoogleMapInstructionLabel.Name = "GoogleMapInstructionLabel";
             this.GoogleMapInstructionLabel.Size = new System.Drawing.Size(525, 141);
@@ -108,7 +111,8 @@
             // 
             this.HowtoGetLinkLabel.AutoSize = true;
             this.HowtoGetLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.HowtoGetLinkLabel.Location = new System.Drawing.Point(22, 135);
+            this.HowtoGetLinkLabel.ForeColor = System.Drawing.Color.Black;
+            this.HowtoGetLinkLabel.Location = new System.Drawing.Point(423, 318);
             this.HowtoGetLinkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HowtoGetLinkLabel.Name = "HowtoGetLinkLabel";
             this.HowtoGetLinkLabel.Size = new System.Drawing.Size(176, 25);
@@ -120,7 +124,7 @@
             this.GoogleMapsLinkLabel.ActiveLinkColor = System.Drawing.Color.MidnightBlue;
             this.GoogleMapsLinkLabel.AutoSize = true;
             this.GoogleMapsLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.GoogleMapsLinkLabel.Location = new System.Drawing.Point(122, 158);
+            this.GoogleMapsLinkLabel.Location = new System.Drawing.Point(523, 341);
             this.GoogleMapsLinkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GoogleMapsLinkLabel.Name = "GoogleMapsLinkLabel";
             this.GoogleMapsLinkLabel.Size = new System.Drawing.Size(116, 22);
@@ -128,30 +132,13 @@
             this.GoogleMapsLinkLabel.TabStop = true;
             this.GoogleMapsLinkLabel.Text = "Google Maps";
             // 
-            // HomeLabelLink
-            // 
-            this.HomeLabelLink.ActiveLinkColor = System.Drawing.Color.Transparent;
-            this.HomeLabelLink.AutoSize = true;
-            this.HomeLabelLink.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HomeLabelLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HomeLabelLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.HomeLabelLink.LinkColor = System.Drawing.Color.Black;
-            this.HomeLabelLink.Location = new System.Drawing.Point(9, 13);
-            this.HomeLabelLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.HomeLabelLink.Name = "HomeLabelLink";
-            this.HomeLabelLink.Size = new System.Drawing.Size(82, 52);
-            this.HomeLabelLink.TabIndex = 12;
-            this.HomeLabelLink.TabStop = true;
-            this.HomeLabelLink.Text = "Hanap\r\n☕︎Kape\r\n";
-            this.HomeLabelLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.HomeLabelLink_LinkClicked);
-            // 
             // ManualButton
             // 
             this.ManualButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ManualButton.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.ManualButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ManualButton.Location = new System.Drawing.Point(472, 308);
-            this.ManualButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ManualButton.Location = new System.Drawing.Point(873, 491);
+            this.ManualButton.Margin = new System.Windows.Forms.Padding(2);
             this.ManualButton.Name = "ManualButton";
             this.ManualButton.Size = new System.Drawing.Size(123, 41);
             this.ManualButton.TabIndex = 13;
@@ -163,22 +150,33 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20F);
-            this.label2.Location = new System.Drawing.Point(98, 22);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(499, 205);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(511, 32);
             this.label2.TabIndex = 14;
             this.label2.Text = "🌐 Google Map Link Shop Registration";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // GoogleMapLinkRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(604, 358);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1389, 598);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ManualButton);
-            this.Controls.Add(this.HomeLabelLink);
             this.Controls.Add(this.GoogleMapsLinkLabel);
             this.Controls.Add(this.HowtoGetLinkLabel);
             this.Controls.Add(this.GoogleMapInstructionLabel);
@@ -187,10 +185,12 @@
             this.Controls.Add(this.GenerateBtn);
             this.Controls.Add(this.GoogleMapTxtBox);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "GoogleMapLinkRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,8 +204,8 @@
         private System.Windows.Forms.Label GoogleMapInstructionLabel;
         private System.Windows.Forms.Label HowtoGetLinkLabel;
         private System.Windows.Forms.LinkLabel GoogleMapsLinkLabel;
-        private System.Windows.Forms.LinkLabel HomeLabelLink;
         private System.Windows.Forms.Button ManualButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
