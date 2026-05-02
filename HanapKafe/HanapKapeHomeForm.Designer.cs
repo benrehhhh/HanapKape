@@ -128,6 +128,7 @@
             this.Controls.Add(this.ExploreNBtn);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "HanapKapeHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HanapKape";

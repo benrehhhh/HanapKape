@@ -41,8 +41,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.GoogleMapsLinkButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox2
@@ -187,15 +187,15 @@
             this.button2.Text = "➤ Submit Suggestion";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // Logo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.Location = new System.Drawing.Point(12, 10);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(130, 78);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 17;
+            this.Logo.TabStop = false;
             // 
             // ManualRegistrationForm
             // 
@@ -203,7 +203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1389, 598);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.GoogleMapsLinkButton);
             this.Controls.Add(this.button1);
@@ -218,10 +218,11 @@
             this.Controls.Add(this.textBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ManualRegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manual";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,6 +241,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button GoogleMapsLinkButton;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Logo;
     }
 }
